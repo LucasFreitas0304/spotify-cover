@@ -29,6 +29,11 @@ const albums = [
     author: 'Playboi Carti',
     cover: 'https://upload.wikimedia.org/wikipedia/pt/f/f6/Die_Lit.png',
   },
+  {
+    title: '17',
+    author: 'XXXTENTACION',
+    cover: 'https://upload.wikimedia.org/wikipedia/pt/thumb/2/2e/XXXTentacion_17.jpg/220px-XXXTentacion_17.jpg'
+  },
 ];
 
 let position = 0;
