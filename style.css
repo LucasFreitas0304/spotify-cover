@@ -1,61 +1,98 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #222;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #222;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'DM Sans';
+  color: #fff;
 }
 
 .card {
-    background-color: #181818;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: opacity 0.3s,transform 1000ms;
+  background-color: #181818;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 1000ms;
+  max-width: 230px;
 }
 
 .card img {
-    width: 190px;
-    height: 190px;
-    border-radius: 8px;
-    user-select: none;
-    -webkit-user-drag: none;
+  width: 190px;
+  height: 190px;
+  border-radius: 8px;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .card-text {
-    font-family: "DM Sans";
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    gap: 2px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 2px;
+  width: 100%;
 }
 
 .card-text h2 {
-    font-size: 21px;
-    font-weight: 500;
+  font-size: 21px;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .card-text p {
-    font-size: 15px;
-    font-weight: 500;
-    color: #b3b3b3;
+  font-size: 15px;
+  font-weight: 500;
+  color: #b3b3b3;
 }
 
 .card:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
-.card:active{
-    transform: translateY(5px);
+.card:active {
+  transform: translateY(5px);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+#back-button,
+#next-button {
+  height: 48px;
+  width: 48px;
+  background-color: #1ed760;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  font-size: 16px;
+}
+
+#back-button:hover,
+#next-button:hover {
+  opacity: 0.8;
+}
+
+.album-counter {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #b3b3b3;
+  letter-spacing: 3px;
 }
